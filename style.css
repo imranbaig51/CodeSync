@@ -1,0 +1,39 @@
+ body{
+    font-family: inter;
+    font-weight: 400;
+ }
+/* utility classes starts from here */
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-ExtraLight.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-Thin.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-Regular.ttf);
+    font-weight: 400;
+}
+.fw-200{
+    font-weight: 200;
+}
+.blue-background{
+    background: url(imgs/Gradient.png);
+    background-repeat: round;
+}
+/* Utility Classes Ends Here */
+.main-logo{
+    width: 160px;
+}
+.navbar-toggler:focus{
+ box-shadow: none;
+}
