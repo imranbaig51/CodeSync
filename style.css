@@ -30,6 +30,29 @@
     background: url(imgs/Gradient.png);
     background-repeat: round;
 }
+.hero-poster-mobile{
+    background:url(imgs/Frame\ 5.png);
+    background-repeat: round;
+}
+.gap-6 {
+    gap: 2.75rem;
+  }
+  .w-300{
+   width: 300px;
+  }
+  .fs-14{
+  font-size: 14px;
+  }
+  .fs-24{
+    font-size: 1.5rem;
+  }
+  .f-bolder{
+    font-weight: bolder;
+  }
+  .py-05{
+    padding-top: 6rem !important;
+  padding-bottom: 10rem !important;
+  }
 /* Utility Classes Ends Here */
 .main-logo{
     width: 160px;
@@ -37,3 +60,25 @@
 .navbar-toggler:focus{
  box-shadow: none;
 }
+.btn{
+    width: 115px;
+    font-size: 12px;
+    height: 37px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 20px 0px #036;
+}
+
+@media (min-width: 576px) {
+    .sm-poster{
+        background: url(imgs/Hero-section-Poster.png);
+        background-repeat: round;
+    }
+    .sm-w-300{
+        width: 300px;
+    }
+    .sm-w-370{
+        width: 370px;
+    }
+  }
