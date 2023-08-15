@@ -1,84 +1,252 @@
- body{
-    font-family: inter;
-    font-weight: 400;
- }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: inter;
+  font-weight: 400;
+}
 /* utility classes starts from here */
 @font-face {
-    font-family: inter;
-    src: url(Fonts/Inter-ExtraLight.ttf);
-    font-weight: 100;
+  font-family: inter;
+  src: url(Fonts/Inter-ExtraLight.ttf);
+  font-weight: 100;
 }
 @font-face {
-    font-family: inter;
-    src: url(Fonts/Inter-Light.ttf);
-    font-weight: 200;
+  font-family: inter;
+  src: url(Fonts/Inter-Light.ttf);
+  font-weight: 200;
 }
 @font-face {
-    font-family: inter;
-    src: url(Fonts/Inter-Thin.ttf);
-    font-weight: 300;
+  font-family: inter;
+  src: url(Fonts/Inter-Thin.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(Fonts/Inter-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
-    font-family: inter;
-    src: url(Fonts/Inter-Regular.ttf);
-    font-weight: 400;
+  font-family: inter;
+  src: url(Fonts/Inter-Medium.ttf);
+  font-weight: 500;
 }
-.fw-200{
-    font-weight: 200;
+@font-face {
+  font-family: inter;
+  src: url(Fonts/Inter-SemiBold.ttf);
+  font-weight: 600;
 }
-.blue-background{
-    background: url(imgs/Gradient.png);
-    background-repeat: round;
+@font-face {
+  font-family: inter;
+  src: url(Fonts/Inter-Bold.ttf);
+  font-weight: 700;
 }
-.hero-poster-mobile{
-    background:url(imgs/Frame\ 5.png);
-    background-repeat: round;
+@font-face {
+  font-family: inter;
+  src: url(Fonts/Inter-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+
+.fw-200 {
+  font-weight: 200;
+}
+.blue-background {
+  background: url(imgs/Gradient.png);
+  background-repeat: round;
+}
+.hero-poster-mobile {
+  background: url(imgs/Frame\ 5.png);
+  /* background-repeat: round; */
+  background-size: cover;
+  background-position: bottom;
 }
 .gap-6 {
-    gap: 2.75rem;
-  }
-  .w-300{
-   width: 300px;
-  }
-  .fs-14{
+  gap: 2.75rem;
+}
+.mw-300 {
+  max-width: 300px;
+}
+.fs-14 {
   font-size: 14px;
-  }
-  .fs-24{
-    font-size: 1.5rem;
-  }
-  .f-bolder{
-    font-weight: bolder;
-  }
-  .py-05{
-    padding-top: 6rem !important;
-  padding-bottom: 10rem !important;
-  }
+}
+.fs-20 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.fs-18 {
+  font-size: 20px;
+  
+}
+.py-05 {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+/* .hero-section{
+  position: absolute;
+} */
 /* Utility Classes Ends Here */
-.main-logo{
-    width: 160px;
+.main-logo {
+  width: 160px;
 }
-.navbar-toggler:focus{
- box-shadow: none;
+.navbar-toggler:focus {
+  box-shadow: none;
 }
-.btn{
-    width: 115px;
-    font-size: 12px;
-    height: 37px;
-    border-radius: 8px;
-    border: none;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0px 0px 20px 0px #036;
+.nav-item {
+  padding: 4px 0;
+}
+.btn {
+  /* width: 115px; */
+  /* height: 37px; */
+  padding: 0.9rem 1.5rem;
+  font-size: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 0px 20px 0px #036;
 }
 
 @media (min-width: 576px) {
-    .sm-poster{
-        background: url(imgs/Hero-section-Poster.png);
-        background-repeat: round;
-    }
-    .sm-w-300{
-        width: 300px;
-    }
-    .sm-w-370{
-        width: 370px;
-    }
+  .container-fluid{
+    max-width: 570px;
   }
+  /* .hero-poster-mobile {
+    background: none;
+  } */
+  /* .hero-poster-mobile {
+    background: url(imgs/Frame\ 5.png);
+    
+    background-size: cover;
+  } */
+  
+  /* .sm-poster::after {
+    content: url(imgs/laptop.png);
+    position: absolute;
+    top: 0;
+    bottom: 1rem;
+    right: 0;
+    opacity: 0.4;
+  } */
+
+  .z-index-1{
+    z-index: 1;
+  }
+  .positn-reltve{
+    position: relative;
+  }
+
+  .sm-mw-300 {
+    max-width: 300px;
+  }
+  .sm-mw-355 {
+    max-width: 355px;
+  }
+  .sm-mw-370 {
+    max-width: 370px;
+  }
+  
+  
+  .sm-fs-big {
+    font-size: 1.9rem;
+  }
+  .sm-fs-22 {
+    font-size: 22px;
+  }
+  .btn {
+    /* width: 140px;
+    height: 55px; */
+    padding: 14px 35px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 768px){
+  .container-fluid{
+    max-width: 760PX;
+  }
+}
+  
+
+@media (min-width: 992px) {
+  .container-fluid{
+    max-width: 992px;
+  }
+  .lg-solid-backround {
+    background: url(imgs/shape\ top\ baR.png);
+    background-repeat: none;
+    background-size: cover;
+  }
+  .sm-poster {
+    /* position: relative;x */
+    background: url(imgs/Frame\ 6.png);
+    background-repeat: round;
+    /* height: 82vh; */
+    height: 50rem;
+  }
+  .sm-poster::after {
+    content: url(imgs/laptop.png);
+    position: absolute;
+    top: 0;
+    bottom: 1rem;
+    right: 0;
+    /* opacity: 0.4;  */
+  }
+  .pt-lg-04 {
+    padding-top: 7rem;
+  }
+  .lg-fs-22 {
+    font-size: 22px;
+  }
+  /* .sm-poster::after {
+    opacity: 1;
+  } */
+  .main-logo {
+    width: 200px;
+  }
+  .nav-item {
+    padding: 0 1rem;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .sm-poster {
+    height: 44.6rem;
+  }
+  .lg-shadow {
+    box-shadow: 0 0.25px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid{
+    max-width: unset;
+  }
+  .px-xl-6 {
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+  }
+  .xl-fs-40{
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .xl-fs-30{
+    font-size: 30px;
+  }
+  .xl-fs-20{
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .xl-mw-450{
+    max-width: 450px;
+  }
+  .xl-mw-530{
+    max-width: 530px;
+  }
+  .xl-mt-3{
+    margin-top: 3rem;
+  }
+  .btn{
+    padding: 1rem 2.2rem;
+  }
+}
