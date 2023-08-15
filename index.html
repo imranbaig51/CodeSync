@@ -6,39 +6,82 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
-            <div class="container-fluid blue-background py-2 px-sm-5">
-              <a class="navbar-brand" href="#"><img class="main-logo" src="imgs/logo.svg"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><img src="imgs/Vector.svg" alt="im"></span>
-              </button>
-              <div class="collapse navbar-collapse flex-sm-grow-0" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto  my-3 mb-lg-0 mt-lg-0">
-                  <li class="nav-item fw-200 ">
-                    <a class="nav-link text-white" href="#">Services</a>
-                  </li>
-                  <li class="nav-item fw-200">
-                  <a class="nav-link text-white" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item fw-200">
-                    <a class="nav-link text-white" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item fw-200">
-                    <a class="nav-link text-white" href="#">About us</a>
-                  </li>
-                  <li class="nav-item fw-200">
-                    <a class="nav-link text-white" href="#">Contact us</a>
-                  </li>    
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary py-0 fixed-top blue-background lg-solid-backround lg-shadow"
+      >
+        <!-- <div class="container"> -->
+        <div class="container-fluid top py-2 px-lg-4 px-xl-6 lg-shadow">
+          <a class="navbar-brand" href="#"
+            ><img class="main-logo" src="imgs/logo.svg"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><img src="imgs/Vector.svg" alt="img"
+            /></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-sm-grow-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav fw-200 me-auto pt-2 pt-lg-0 my-3 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- </div> -->
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="hero-section hero-poster-mobile sm-poster position-relative ">
+        <div class="container-fluid py-2 px-lg-4 px-xl-6 ">
+          <div
+            class="text text-white d-flex gap-6 gap-sm-3 flex-column py-05 pt-lg-04 text-uppercase z-index-1 positn-reltve mt-sm-4 "
+          >
+            <h1 class="fs-20 f-bolder sm-fs-big xl-fs-40">Web Development Services</h1>
+            <p class="sm-mw-300 fs-18 sm-fs-22 sm-mw-355 xl-fs-30 xl-mw-450">
+              Five-star 5 stage process of programming
+            </p>
+            <p class="mw-300 fs-14 sm-mw-370 xl-fs-20 xl-mw-530">
+              We create stunning dynamic websites and web apps with modish
+              designs to keep you on top of the software-driven revolution.
+            </p>
+            <div>
+              <button type="button" class="btn btn-primary xl-mt-3">HIRE US NOW</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
