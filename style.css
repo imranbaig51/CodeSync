@@ -59,12 +59,18 @@ body {
 }
 .hero-poster-mobile {
   background: url(imgs/Frame\ 5.png);
-  /* background-repeat: round; */
   background-size: cover;
   background-position: bottom;
 }
+.light-green-background {
+  background-color: #f6faff;
+}
 .gap-6 {
   gap: 2.75rem;
+}
+span {
+  display: inline-block;
+  line-height: normal;
 }
 .mw-260 {
   max-width: 261px;
@@ -75,6 +81,7 @@ body {
 .mw-500 {
   max-width: 500px;
 }
+
 .fs-14 {
   font-size: 14px;
 }
@@ -82,12 +89,19 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
-.fs-20 {
+.fs-24 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.fs-18 {
+.fs-20 {
   font-size: 20px;
+}
+.fs-18 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.ml-2 {
+  margin-left: 2rem;
 }
 .py-05 {
   padding-top: 6rem;
@@ -96,9 +110,12 @@ body {
 .align-center {
   align-items: center;
 }
-/* .hero-section{
-  position: absolute;
-} */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
 /* Utility Classes Ends Here */
 .main-logo {
   width: 160px;
@@ -110,8 +127,6 @@ body {
   padding: 4px 0;
 }
 .btn {
-  /* width: 115px; */
-  /* height: 37px; */
   padding: 0.9rem 1.5rem;
   font-size: 12px;
   border-radius: 8px;
@@ -119,19 +134,10 @@ body {
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 0px 20px 0px #036;
 }
-/* .blue-bar {
-  height: 10px;
-  width: 60px;
-  background-color: #185594;
-  border-radius: 1rem;
-} */
-.heading{
+.heading {
   position: relative;
-  max-width: 220px;
-  margin-left: auto;
-  margin-right: auto;
 }
-.heading::before{
+.heading::before {
   content: "";
   position: absolute;
   top: 2.4rem;
@@ -169,28 +175,34 @@ body {
   border: none;
   color: white;
 }
+.tiles {
+  background-color: white;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+}
+.tiles:hover {
+  cursor: pointer;
+  background-color: #185594;
+  color: white;
+  transition: all 0.5s;
+}
+.dispaly-none {
+  display: none;
+}
+.tiles-wraper {
+  background: url(imgs/Doted-Bars-2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 1rem 0;
+}
 
 @media (min-width: 576px) {
   .container-fluid {
     max-width: 570px;
   }
-  /* .hero-poster-mobile {
-    background: none;
-  } */
-  /* .hero-poster-mobile {
-    background: url(imgs/Frame\ 5.png);
-    
-    background-size: cover;
-  } */
-
-  /* .sm-poster::after {
-    content: url(imgs/laptop.png);
-    position: absolute;
-    top: 0;
-    bottom: 1rem;
-    right: 0;
-    opacity: 0.4;
-  } */
   .sm-center {
     justify-content: center;
   }
@@ -224,6 +236,10 @@ body {
   .btn-see-more {
     font-weight: 500;
   }
+  .tiles-wraper {
+    background: url(imgs/Doted-Bars-full.png);
+    background-size: 295%;
+  }
 }
 @media (min-width: 768px) {
   .container-fluid {
@@ -241,10 +257,9 @@ body {
     background-size: cover;
   }
   .sm-poster {
-    /* position: relative;x */
     background: url(imgs/Frame\ 6.png);
     background-repeat: round;
-    /* height: 82vh; */
+
     height: 50rem;
   }
   .sm-poster::after {
@@ -253,7 +268,6 @@ body {
     top: 0;
     bottom: 1rem;
     right: 0;
-    /* opacity: 0.4;  */
   }
   .pt-lg-04 {
     padding-top: 7rem;
@@ -285,13 +299,9 @@ body {
   .lg-shadow {
     box-shadow: 0 0.25px;
   }
-  .heading{
-    max-width: 300px;
-  }
-  .heading::before{
+
+  .heading::before {
     top: 3rem;
-    /* right: auto; */
-    /* left: auto; */
   }
   .heading > h2 {
     font-size: 30px;
@@ -304,7 +314,45 @@ body {
   .text-pair > p {
     font-size: 12px;
   }
+  /* util classes */
+
+  .lg-d-flex {
+    display: flex;
+  }
+  /* util classes */
+  .headings {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tiles-wraper {
+    background: url(imgs/Doted-Bars-full.png);
+    background-size: 85% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+  }
+  .tiles {
+    max-width: 230px;
+    margin: 10px 0;
+  }
+  .tiles-wraper :nth-of-type(2) {
+    margin-left: 25%;
+  }
+  .tiles-wraper :nth-of-type(3) {
+    box-sizing: content-box;
+    padding-right: 0.5rem;
+    margin-left: 34.5%;
+    max-width: 260px;
+  }
+  .tiles-wraper :nth-of-type(4) {
+    margin-left: 50%;
+  }
+  .tiles-wraper :nth-of-type(5) {
+    margin-left: 75%;
+    margin-bottom: 3rem;
+  }
 }
+
 @media (min-width: 1200px) {
   .container-fluid {
     max-width: unset;
@@ -335,5 +383,21 @@ body {
   }
   .btn {
     padding: 1rem 2.2rem;
+  }
+  .tiles {
+    max-width: 280px;
+  }
+  .tiles-wraper :nth-of-type(1) {
+    margin-left: 2.5%;
+  }
+  .tiles-wraper :nth-of-type(3) {
+    margin-left: 36%;
+    max-width: 340px;
+  }
+  .tiles-wraper :nth-of-type(4) {
+    margin-left: 57%;
+  }
+  .tiles-wraper :nth-of-type(5) {
+    margin-left: 79%;
   }
 }
