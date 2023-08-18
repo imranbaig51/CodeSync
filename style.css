@@ -9,6 +9,10 @@ body {
   font-family: inter;
   font-weight: 400;
 }
+img{
+  width: 100%;
+  height: auto;
+}
 /* utility classes starts from here */
 @font-face {
   font-family: inter;
@@ -294,6 +298,39 @@ transform: scaleX(1);
     text-transform: capitalize;
   }
   
+}
+.testimonial-item img{
+  border-radius: 16px;
+  height: 200px;
+  
+}
+.card-content{
+position: absolute;
+top: 0;
+color: white;
+padding: 1rem;
+margin-top: 1rem;
+& h3{
+  font-size: 12px;
+  font-weight: 500;
+  width: 50%;
+}
+& h3 span{
+  font-size: 12px;
+  font-weight: 100;
+  
+}
+& p{
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1;
+  text-transform: lowercase;
+  width: 50%;
+}
+& p span{
+  display: none;
+}
+
 }
 
 @media (min-width: 576px) {
