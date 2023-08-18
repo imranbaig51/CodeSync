@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* #carouselExampleControls  */
+
 body {
   font-family: inter;
   font-weight: 400;
@@ -81,7 +83,6 @@ span {
 .mw-500 {
   max-width: 500px;
 }
-
 .fs-14 {
   font-size: 14px;
 }
@@ -205,7 +206,7 @@ span {
 .technology-heading{
     max-width: 516px;
     align-items: center;
-    margin: 3rem auto;
+    margin: 3rem auto 1rem auto;
 }
 .technology-heading div label{
   font-size: 14px;
@@ -216,34 +217,40 @@ span {
    cursor: pointer;
 }
 .technology-heading label::before{
-  display: none;
   content: "";
   position: absolute;
   top: 1.5rem;
   left: 3px;
   height: 10px;
-  width: 76px;
+  width: 100%;
   background-color: #185594;
   border-radius: 1rem;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s linear;
 }
 #frontend:checked+ label::before{
-display: block;
+transform-origin: bottom right;
+transform: scaleX(1);
 }
 
 .technology-heading label::after{
-  display: none;
   content: "";
   position: absolute;
   top: 1.5rem;
   right: 0;
   left: -3px;
   height: 10px;
-  width: 76px;
+  width: 100%;
   background-color: #185594;
   border-radius: 1rem;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.25s linear;
 }
 #backend:checked+ label::after{
-  display: block;
+  transform-origin: bottom left;
+transform: scaleX(1);
   }
    .t-logos{
     width: 100%;
@@ -259,8 +266,36 @@ display: block;
     font-size: 14px;
     font-weight: 700;
     margin: 10px 0;
-  }
+  } 
 }
+.carousel-item img { 
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.carousel-content{
+  position: absolute;
+  color: white;
+  bottom: 0;
+  padding: 0 1rem;
+
+  & h3{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  & p{
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1;
+    text-transform: lowercase;
+    margin-bottom: 5px;
+  }
+  & span::first-letter{
+    text-transform: capitalize;
+  }
+  
+}
+
 @media (min-width: 576px) {
   .container-fluid {
     max-width: 570px;
@@ -271,7 +306,7 @@ display: block;
   .z-index-1 {
     z-index: 1;
   }
-  .positn-reltve {
+  .sm-pos-reltve {
     position: relative;
   }
   .sm-mw-300 {
@@ -301,6 +336,14 @@ display: block;
   .tiles-wraper {
     background: url(imgs/Doted-Bars-full.png);
     background-size: 295%;
+  }
+  .carousel-content{
+    & h3{
+      font-size: 16px;
+    }
+    & p{
+      font-size: 14px;
+    }
   }
 }
 @media (min-width: 768px) {
@@ -434,6 +477,18 @@ display: block;
       margin: 2rem 0;
     }
   }
+  .carousel-content{
+    max-width: 580px;
+    margin: 2rem 2rem;
+    & h3{
+      font-size: 18px;
+      margin-bottom: 1.5rem;
+    }
+    & p{
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -472,6 +527,9 @@ display: block;
   }
   .tiles-wraper :nth-of-type(1) {
     margin-left: 2.5%;
+   }
+  .tiles-wraper :nth-of-type(2) {
+    margin-left: 24.3%;
   }
   .tiles-wraper :nth-of-type(3) {
     margin-left: 36%;
@@ -482,5 +540,17 @@ display: block;
   }
   .tiles-wraper :nth-of-type(5) {
     margin-left: 79%;
+  }
+  .carousel-content{
+    max-width: 680px;
+    /* margin: 2rem 2rem; */
+    & h3{
+      font-size: 20px;
+      /* margin-bottom: 1.5rem; */
+    }
+    & p{
+      font-size: 18px;
+      /* font-weight: 200; */
+    }
   }
 }
