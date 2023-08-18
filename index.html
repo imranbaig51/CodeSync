@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeSync</title>
-    <link rel="shortcut icon" href="imgs/www.png"
-     type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/www.png" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
     <script
@@ -66,12 +65,13 @@
       </nav>
     </header>
     <main>
-      <section class="hero-section hero-poster-mobile sm-poster position-relative mt-5"
+      <section
+        class="hero-section hero-poster-mobile sm-poster position-relative mt-5"
       >
         <div class="container-fluid py-2 px-lg-4 px-xl-6">
           <div class="container">
             <div
-              class="text text-white d-flex gap-6 gap-sm-3 flex-column py-05 pt-lg-04 text-uppercase z-index-1 positn-reltve mt-sm-4"
+              class="text text-white d-flex gap-6 gap-sm-3 flex-column py-05 pt-lg-04 text-uppercase z-index-1 sm-pos-reltve mt-sm-4"
             >
               <h1 class="fs-24 f-bolder sm-fs-big xl-fs-40">
                 Web Development Services
@@ -156,7 +156,7 @@
         <div
           class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-2"
         >
-          <div class="container">
+          <div class="container pb-5">
             <div class="heading d-flex flex-column align-center my-5 gap-4">
               <h2>Our Process</h2>
               <span class="mt-2 text-center"
@@ -212,33 +212,105 @@
         </div>
       </section>
       <section class="our-technology">
-        <div class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-2">
+        <div
+          class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-2"
+        >
           <div class="container">
             <div class="technology-heading d-flex flex-column">
               <h2 class="fsw-20 lg-fs-30">OUR TECHNOLOGIES</h2>
-              <div class="Development">
-                <input hidden type="radio" name="Development" id="frontend"><label for="frontend">FRONTEND</label>
-                <input hidden type="radio" name="Development" id="backend"><label for="backend">BACKEND</label>
-                </div>
+              <div>
+                <input
+                  hidden
+                  type="radio"
+                  name="Development"
+                  id="frontend"
+                /><label for="frontend">FRONTEND</label>
+                <input
+                  hidden
+                  type="radio"
+                  name="Development"
+                  id="backend"
+                /><label for="backend">BACKEND</label>
+              </div>
 
-                <div class="t-logos">
-                  <span class="icons">
-                   <i><img src="imgs/react 1.png"></i>
-                   <h4>REACT</h4>
-                  </span>
-                  <span class="icons">
-                   <i><img src="imgs/angular 1.png"></i>
-                   <h4>angular</h4>
-                  </span>
-                  <span class="icons">
-                   <i><img src="imgs/vue 1.png"></i>
-                   <h4>vue</h4>
-                  </span>
-                 </div>
-
+              <div class="t-logos">
+                <span class="icons">
+                  <i><img src="imgs/react 1.png" /></i>
+                  <h4>REACT</h4>
+                </span>
+                <span class="icons">
+                  <i><img src="imgs/angular 1.png" /></i>
+                  <h4>angular</h4>
+                </span>
+                <span class="icons">
+                  <i><img src="imgs/vue 1.png" /></i>
+                  <h4>vue</h4>
+                </span>
+              </div>
             </div>
-            
           </div>
+        </div>
+      </section>
+      <section class="why-section">
+        <div
+          class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-2"
+        >
+          <div class="container">
+            <div class="heading d-flex flex-column align-center mb-5 gap-4">
+              <h2>Why Codesync</h2>
+              <span class="mt-2 text-center"
+                >Codesync is the partner of choice</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active po">
+              <img
+                src="imgs/Carousel-Photo-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-content">
+                <h3>Work with Experts</h3>
+                <p>
+                  <span>Benefit</span> from the experience, knowledge, unique
+                  perspective, and efficiency that our experts bring to each
+                  project.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/Carousel-Photo-2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
     </main>
