@@ -651,6 +651,9 @@ footer{
       display: inline; 
     }
 }
+.service-tiles{
+  max-width: 695px;
+}
 .lg-wrap{
   flex-wrap:wrap;
 }
@@ -919,9 +922,6 @@ margin-bottom: 1rem;
 .services-arrows{
   display: none;
 }
-.service-second-heading{
-  max-width: 730px;
-}
 .material-wrapper{
   padding-left: 4rem;
   max-width: 750px;
@@ -989,14 +989,11 @@ margin-bottom: 1rem;
   }
   .carousel-content{
     max-width: 680px;
-    /* margin: 2rem 2rem; */
     & h3{
-      font-size: 20px;
-      /* margin-bottom: 1.5rem; */
+      font-size: 20px;     
     }
     & p{
       font-size: 18px;
-      /* font-weight: 200; */
     }
   }
   .card-content{  
@@ -1087,7 +1084,7 @@ nav h1{
 @media (min-width: 1400px){
   .servicess-container{
     justify-content: space-between;
-    padding-right: 8rem;
+    padding-right: 9rem;
   }
 .big-bullet{
   width: 345px;
