@@ -584,6 +584,26 @@ footer{
         display: none;
       }
        }
+       .about-us-container{
+        & h4{
+          font-size: 16px;font-weight: 500;}
+          & p{
+            font-size: 3vw;
+          }
+       }
+       .our-vision-wrapper{
+        display: flex;
+        /* justify-content: space-between; */
+        & .our-vision{
+          width: 50%;
+        }
+        & .codesync-mobile-pic-sm{
+         width:50%;
+        }
+       }
+       .big-mobile-poster{
+        display: none;
+       }
 
 @media (min-width: 576px) {
   .container-fluid {
@@ -696,7 +716,17 @@ footer{
   & h2{font-size: 22px;}
   & p{font-size: 18px;}
  }
+ .about-us-container{
+  & h4{
+    font-size: 18px;}
+    & p{
+      font-size: 16px;
+    }}
+    .our-vision{
+      padding: 2.5rem 0;
+       }
  }
+ 
 @media (min-width: 768px) {
   .container-fluid {
     max-width: 760px;
@@ -733,6 +763,12 @@ footer{
   font-size: 14px;}
 & .counter-btn{
   font-size: 20px;}
+ }
+ .codesync-mobile-pic-sm{
+     display: flex;
+     justify-content: center;
+     & img{
+      max-width: 260px;}
  }
 }
 
@@ -854,7 +890,6 @@ footer{
     height: 8px;
     width: 100%;
     }
-
     .icons { 
       margin-top: 12px;
       & img{
@@ -1040,7 +1075,27 @@ margin-bottom: 1rem;
         padding: 0 8px;
   }
  }
+ .codesync-mobile-pic-sm{
+  display: none;
 }
+.our-vision{
+  min-width: 100%;
+}
+.about-us-content-wrapper{
+  width: 40%;
+  padding-left: 2rem;
+}
+.big-mobile-poster{
+  position: absolute;
+  display: block;
+  width: 50%;
+  top: 10rem;
+  right: 2rem;
+}
+.about-us-footer{
+  position: relative;
+}
+ }
 @media (min-width: 1200px) {
   .container-fluid {
     max-width: unset;
@@ -1182,11 +1237,31 @@ nav h1{
   padding-left: 4rem;
   margin-bottom: 1rem;
 }      
+  .big-mobile-poster{
+    width: 44%;
+    right: 9rem;
+    top: 18rem;
+  }
+  .about-us-content-wrapper{
+    margin: 5rem 0 2rem 0;
+    /* padding-top: 2rem; */
+   & p{
+    font-size: 16px;
+   }
+   & h4{
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+    font-weight: 600;
+   }
+  }
 }
 @media (min-width: 1400px){
   .servicess-container{
     justify-content: space-between;
     padding-right: 9rem;
+  }
+  .xl-pb-2{
+  padding-bottom: 2rem;
   }
 .big-bullet{
   width: 345px;
@@ -1198,5 +1273,10 @@ nav h1{
   & span{
     padding-left: 2rem;
   }
+}
+.big-mobile-poster{
+  max-width: 578px;
+  top: 13rem;
+  right: 12rem;
 }
 }
