@@ -121,12 +121,12 @@ span {
 .mb-8{
   margin-bottom: 8px;
 }
-.mt5{
-  margin-top: 55vw;
-}
 .py-05 {
   padding-top: 6rem;
   padding-bottom: 10rem;
+}
+.pt-08{
+  padding-top: 5rem;
 }
 .align-center {
   align-items: center;
@@ -507,9 +507,10 @@ footer{
          border: 2px solid rgb(240, 237, 237);
          background-color: white;
          border-radius: 1rem;
-         min-height: 90px;
          justify-content: space-between;
          margin-bottom: 8px;
+         margin-right: auto;
+         margin-left: auto;
          box-shadow: 0 0 4px 0 rgb(233, 225, 225);
          & h4{
           font-size: 11px;
@@ -630,14 +631,13 @@ footer{
        }
        .blog-email{
         display: flex; justify-content: center;
-        position: relative;
         margin: 2rem 0 8rem 0;
         & input{
           border-radius: .5rem;
           border: none;
           outline: none;
           background-color: #d9d9d9;
-          padding: 6px 0;
+          padding: 6px 0 6px 10px;
           /* max-width: 190px; */
           min-width: 100px;
           
@@ -648,28 +648,33 @@ footer{
             color: rgba(0, 0, 0, 0.40);
           }
         }
-        & label{
+        & button{
           background-color: #7341de;
           color: white;
           text-align: center;
-          /* padding: 2px 12px; */
-          width: 100px;
+          min-width: 100px; 
           font-size: 10px;
           border-radius: 6px;
+          border: none;
           line-height: 3.5;
-          margin-left: 1rem;
+          margin-left: .5rem;
+        }
+        & button:hover{
+          background-color: rgb(226, 226, 251);
+          color: #7341de;
+          cursor: pointer;
+          transition: all 0.5s ease;
         }
        }
        .blog-portfolio-top{
-         position: absolute;
-         /* top: 46%; */
-         top: 5rem;
-         
-        /* left: 2rem;
-        right: 2rem;   */
-        /* transform: translateY(100%); */
+         margin-top: -5rem;
        }
        .blog-portfolio{
+        margin-bottom: 2rem;
+        & a{
+          text-decoration: none;
+          color: black;
+        }
         & h4,h5{
         font-size: 16px;
         font-weight: 600;
@@ -677,6 +682,7 @@ footer{
         }
         & h5{
            margin:4px 0;
+           font-size: 12px;
         }
         & span{
           padding: 2px 8px;
@@ -691,8 +697,106 @@ footer{
        .blog-portfolio-section{
         background: url(imgs/Service-Background.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
        }
+       .return-nav{
+        display: flex;
+        justify-content: space-between;
+       }
+       .blogs-return-btn{
+       color: #999999;
+       font-size: 16px;
+       & span{
+        margin-left: 8px;
+       }
+       }
+       .posted-by {
+        display: flex;
+       & div{
+          align-items: end;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          margin-right: 4px;
+          font-size: 14px;
+          & span:nth-child(2){
+            color: #999999;
+          }}
+          & .insert-photo{
+            width: 35px;
+          }
+      }
+      .blog-article-heading{
+        text-align: center;
+        margin: 2rem 0;
+              & h2{
+              font-size: 20px;
+              font-weight: 700;
+              margin-bottom: 2rem;
+            }
+            & p{
+              font-size: 12px;
+            }
+          }
+          .blog-intro-heading{
+          display: flex;
+          justify-content: space-between;
+          & h4{
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 1.9;
+          }
+          & span{
+            margin: 0 0 0 8px;
+          }
+          }
+          .blog-intro{
+            & p{
+              margin: 2rem 0;
+              font-size: 12px;
+            }
+            & ol{
+              padding: 0 0 0 12px;
+              font-size: 12px;
+              & li{
+                margin: 2rem 0;
+              }
+              & li div{
+                padding:2rem 8px 0 8px;
+              }
+            }
+            .Conclusion{
+              border-bottom: 1px solid rgb(128, 120, 120);
+              & h4{
+                font-size: 14px;
+                font-weight: 600;
+              }
+            }
+          }
+          .updates{
+            padding: 3rem 0;
+            margin: 4rem auto 0 auto;
+            min-width: 150px;
+            min-height: 150px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+          & h4{
+            font-size: 12px;
+            text-align: center;
+          }
+          .subscriber-email{
+            margin: 2rem 0 0 0;
+            padding: 0 1.5rem;
+            & input{
+              background-color: white;
+            }
+            & button{
+              min-width: 60px;
+            }
+          }
+          }
+          
 
 @media (min-width: 576px) {
   .container-fluid {
@@ -782,9 +886,6 @@ footer{
   }
  }
  .service-tiles{  
-  max-width: 540px;
-  min-height: 135px;
-  /* margin: 2px auto; */
   box-shadow: 0 0 8px 0 rgb(233, 225, 225);
   & h4{
    font-size: 14px;
@@ -793,7 +894,6 @@ footer{
   }
   & p{
    font-size: 11px;
-   /* font-weight: 400; */
    padding: 16px 2px 8px 8px;
    & span{
     display: inline;
@@ -814,7 +914,7 @@ footer{
     .our-vision{
       padding: 2.5rem 0;
        }
- }
+   }
  
 @media (min-width: 768px) {
   .container-fluid {
@@ -837,9 +937,9 @@ footer{
       display: inline; 
     }
 }
-.service-tiles{
+/* .service-tiles{
   max-width: 695px;
-}
+} */
 .lg-wrap{
   flex-wrap:wrap;
 }
@@ -1210,35 +1310,44 @@ margin-bottom: 1rem;
 .blog-email{
    margin-bottom: 10rem;
   & input{
-    padding: 12px 6rem 12px 2rem;
+    padding: 12px 12rem 12px 2rem;
     border-radius: 1rem;
     
     &::placeholder{
       font-size: 14px;
     }
   }
-  & label{
+  & button{
     width: 130px;
     font-size: 14px;
     border-radius: 1rem;
     margin-left: 1.5rem;
   }
-  & label:hover{
-    background-color: rgb(226, 226, 251);
-    color: #7341de;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
  }
  .blog-portfolio-top{
- top: 7rem;
  & h4{font-size: 22px; }
+ & h5{ font-size: 16px;}
 }
-}
+.blog-portfolio{
+  padding: 0 2rem;
+  & span{
+    padding: 2px 12px;
+    margin: 0 2px;
+  }
+  & span:nth-child(2){
+    background-color: #142850;
+    color: white;
+  }
+ }
 .blog-portfolio-section{
 background: none;
 }
- 
+ .grayish-background{
+  background-color: #f2f2f2 !important; 
+  color: #a4b4c5 !important;
+  
+ }
+ }
 @media (min-width: 1200px) {
   .container-fluid {
     max-width: unset;
@@ -1421,5 +1530,11 @@ nav h1{
   max-width: 578px;
   top: 13rem;
   right: 12rem;
+}
+.blog-email{
+ margin-bottom: 12rem;
+}
+.blog-portfolio-top{
+margin-top: -8rem;
 }
 }
