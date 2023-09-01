@@ -586,6 +586,14 @@ nav h1 {
       background-color: lightgrey;
       border-radius: 6px;
     }
+    & span:hover{
+      background-color: lightgray;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    /* & span:hover ~ span:nth-child(1){
+      background-color: white;
+    } */
     & span {
       padding: 2px 6px;
     }
