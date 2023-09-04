@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
+    "dev": "nodemon ./src/index.js",
+    "serve": "node ./src/index.js"
+  },
+  "name": "CodeSync-Site",
+  "devDependencies": {
+    "@edgio/cli": "^7.2.2",
+    "@edgio/core": "^7.2.2",
+    "@edgio/devtools": "^7.2.2",
+    "@edgio/nodejs-connector": "^7.2.2",
+    "@edgio/prefetch": "^7.2.2"
+  },
+  "dependencies": {
+    "@edgio/express": "^7.2.2",
+    "express": "^4.18.2"
+  }
+}
