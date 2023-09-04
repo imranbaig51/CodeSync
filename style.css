@@ -74,6 +74,9 @@ img {
 .light-green-background {
   background-color: #f6faff;
 }
+.light-sky-background{
+  background-color:#DBECFF;
+}
 .gap-6 {
   gap: 2.75rem;
 }
@@ -544,6 +547,9 @@ nav h1 {
 }
 .portfolio-profile {
   margin: .5rem 0;
+  /* cursor: pointer; */
+  & a{text-decoration: none;
+       color: #21243d;}
   & .portfolio-profile-material {
     margin-top: 8px;
     & h4 {
@@ -1030,6 +1036,23 @@ nav h1 {
       cursor: pointer;
     }
 }
+.social-pages{
+text-align: center;
+margin: 8px 0;
+}
+.social-pages p{
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #21243D;
+}
+.social-pages img{
+  width: 45px;
+}
+.social-pages span{ 
+padding: 0 12px;
+opacity: 0.7;
+}
 @media (min-width: 576px) {
   .container-fluid {
     max-width: 570px;
@@ -1349,6 +1372,9 @@ nav h1 {
   .lg-display-block {
     display: block;
   }
+  .lg-dispaly-inline{
+    display: inline;
+  }
   /* util classes */
   .headings {
     width: 80%;
@@ -1479,6 +1505,9 @@ nav h1 {
   }
   .section-style {
     margin-top: 9rem;
+  }
+  .no-background{
+    background: none;
   }
   .big-bullet {
     box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.25);
@@ -1858,6 +1887,30 @@ nav h1 {
 .contact-card::after{
   min-width: 250PX;
   min-height: 250px;
+}
+.portfolio-dashboard{
+  margin-bottom: 4rem;
+& h4{
+  margin-bottom: 2rem;
+  font-size: 38px !important;
+  margin-bottom: 1.5rem;
+}
+& p{
+  font-size: 18px !important;
+  font-weight: 500;
+  color: #73808D;
+}
+}
+.word-screen{
+  margin: 4rem 0 2rem 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.screen-conclusion{
+  padding: 5rem;
+  font-size: 24px;
+  font-weight: 500;
+  color: #73808D;
 }
  }
 @media (min-width: 1200px) {
