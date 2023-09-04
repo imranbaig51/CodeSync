@@ -3,7 +3,7 @@
     "edgio:dev": "edgio dev",
     "edgio:build": "edgio build",
     "edgio:deploy": "edgio deploy",
-    "dev": "nodemon ./src/index.js",
+    "dev": "nodemon ./src/index.js --watch src/**/* -e html,css,js",
     "serve": "node ./src/index.js"
   },
   "name": "CodeSync-Site",

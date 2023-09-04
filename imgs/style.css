@@ -56,7 +56,7 @@ img {
   src: url(Inter-ExtraBold.ttf);
   font-weight: 800;
 }
-.w24 {
+.w24{
   width: 24px;
 }
 .fw-200 {
@@ -543,7 +543,7 @@ nav h1 {
   }
 }
 .portfolio-profile {
-  margin: 0.5rem 0;
+  margin: .5rem 0;
   & .portfolio-profile-material {
     margin-top: 8px;
     & h4 {
@@ -830,7 +830,7 @@ nav h1 {
     text-align: center;
   }
   .subscriber-email {
-    margin: 0.8rem 0 0 0;
+    margin: .8rem 0 0 0;
     padding: 0 1.5rem;
     & input {
       background-color: white;
@@ -849,47 +849,47 @@ nav h1 {
     padding: 2rem;
   }
 }
-.query-heading {
+.query-heading{ 
   text-align: center;
   margin-bottom: 1rem;
-  & h2 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 0;
-  }
-  & span {
-    font-size: 14px;
-    font-weight: 600;
-  }
+& h2{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
-.contact-card {
+& span{
+  font-size: 14px;
+  font-weight: 600;
+}
+}
+.contact-card{
   position: relative;
   border: 1px solid #036;
   padding: 1rem;
   border-radius: 1rem;
   overflow: hidden;
-  & .contact-card-content {
+  & .contact-card-content{
     color: #036;
-    & .contact-card-heading {
+    & .contact-card-heading{
       text-align: center;
-      & h4 {
-        font-size: 18px;
-        font-weight: 600;
+      & h4{
+       font-size: 18px;
+       font-weight: 600;
       }
-      & span {
+      & span{
         font-size: 12px;
         font-weight: 500;
       }
     }
-    & ul {
+    & ul{
       list-style: none;
       padding: 5px;
       margin-bottom: 2rem;
       text-align: center;
-      & li img {
+      & li img{
         width: 24px;
       }
-      & li span {
+      & li span{
         font-size: 12px;
         color: #036;
         padding: 5px;
@@ -897,8 +897,8 @@ nav h1 {
     }
   }
 }
-.contact-card::after {
-  content: "";
+.contact-card::after{
+  content:"";
   background: url(Blue-bubbles.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -907,44 +907,44 @@ nav h1 {
   bottom: 0;
   right: 0;
   /* z-index: 1; */
-  min-width: 80px;
+  min-width: 80PX;
   min-height: 80px;
 }
-.call-request-heading {
+.call-request-heading{
   padding-top: 1rem;
-  & h4 {
-    font-size: 14px;
-    margin-bottom: 0;
-    font-weight: 700;
-  }
-  & span {
-    font-size: 12px;
-    font-weight: 700;
-  }
+& h4{
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 700;
 }
-.info-request-option {
+& span{
+  font-size: 12px;
+  font-weight: 700;
+}
+}
+.info-request-option{
   margin: 5px 0;
-  & span {
+  & span{
     border-radius: 8px;
     text-align: center;
     font-weight: 400;
     line-height: 2.1;
     font-size: 10px;
     color: #036;
-    width: 60px;
-    height: 23px;
+     width: 60px;
+     height: 23px;
     margin: 0 2px;
     box-shadow: 0 0 2px #036 inset;
     border: 1px solid #036;
   }
-  & span:hover {
+  & span:hover{
     color: white;
     background-color: #036;
     cursor: pointer;
   }
 }
-.info-inputs {
-  & input {
+.info-inputs{
+  & input{
     width: 100%;
     border: 1px solid #036;
     font-size: 14px;
@@ -953,20 +953,20 @@ nav h1 {
     padding: 8px 12px;
     box-shadow: 0 0 4px #036 inset;
   }
-  & input:focus {
+  & input:focus{
     outline: none;
     box-shadow: none;
     border: 2px solid #036;
   }
-  & ::placeholder {
+  & ::placeholder{
     font-size: 10px;
     font-weight: 600;
     color: rgba(0, 51, 102, 0.43);
   }
-  & input:nth-child(4) {
-    height: 100px;
+  & input:nth-child(4){
+  height: 100px;
   }
-  & textarea {
+  & textarea{
     width: 100%;
     height: 100px;
     font-size: 14px;
@@ -976,21 +976,22 @@ nav h1 {
     border: 1px solid #036;
     border-radius: 1rem;
   }
-  & textarea:focus {
+  & textarea:focus{
     outline: none;
     box-shadow: none;
     border: 2px solid #036;
   }
+  
 }
-.attach-file {
+.attach-file{
   padding-bottom: 10px;
-  & img {
+  & img{
     width: 24px;
   }
-  & label {
+  & label{
     cursor: pointer;
   }
-  & label span:nth-child(2) {
+  & label span:nth-child(2){
     font-size: 12px;
     font-weight: 600;
     color: rgba(0, 51, 102, 0.43);
@@ -998,29 +999,28 @@ nav h1 {
     padding: 0 4px;
   }
 }
-.send-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  & p {
-    margin: 0;
-    font-size: 8px;
+.send-btn{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+& p{
+  margin: 0;
+  font-size: 8px;
     font-weight: 600;
-    color: rgba(0, 51, 102, 0.43);
-  }
-  & span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 60px;
-    font-weight: 400;
-    background-color: #036;
-    color: white;
-    font-size: 10px;
-    border-radius: 1rem;
-    cursor: pointer;
-  }
+    color: rgba(0, 51, 102, 0.43);}
+    & span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 60px;
+      font-weight: 400;
+      background-color: #036;
+      color: white;
+      font-size: 10px;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
 }
 @media (min-width: 576px) {
   .container-fluid {
@@ -1143,29 +1143,29 @@ nav h1 {
   .our-vision {
     padding: 2.5rem 0;
   }
-  .query-heading {
-    & h2 {
-      font-size: 18px;
+  .query-heading{
+    & h2{
+   font-size: 18px;
     }
-    & span {
+    & span{
       font-size: 16px;
     }
   }
-  .contact-card {
-    & .contact-card-content {
-      & .contact-card-heading {
-        & h4 {
-          font-size: 20px;
-        }
-        & span {
-          font-size: 14px;
-        }
-      }
-      & ul li span {
-        font-size: 14px;
-      }
+  .contact-card{
+   & .contact-card-content{
+  & .contact-card-heading{
+    & h4{
+     font-size: 20px;
+    }
+    & span{
+      font-size: 14px;
     }
   }
+  & ul li span{
+    font-size: 14px;
+  }
+}
+}
 }
 
 @media (min-width: 768px) {
@@ -1727,131 +1727,131 @@ nav h1 {
       align-items: flex-start;
     }
   }
-  .call-request {
-    padding: 0 5rem;
-    & .call-request-heading {
-      & h4 {
-        font-size: 34px;
-        margin-bottom: 1rem;
-        letter-spacing: 2px;
+  .call-request{
+   padding: 0 5rem;
+  & .call-request-heading{
+    & h4{
+      font-size: 34px;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
       }
-      & .intrest {
-        font-size: 16px;
-        font-weight: 600;
-      }
+    & .intrest{
+      font-size: 16px;
+      font-weight: 600;
     }
   }
-  .info-request-option {
-    & span {
+  }
+  .info-request-option{
+    & span{
       border-radius: 1rem;
-      width: 80px;
+       width: 80px;
     }
   }
-  .info-inputs {
-    & input {
+  .info-inputs{
+    & input{
       padding: 12px 12px;
       font-size: 16px;
       margin: 1rem 0;
     }
-
-    & ::placeholder {
+  
+    & ::placeholder{
       font-size: 12px;
     }
-
-    & textarea {
+    
+    & textarea{
       font-size: 16px;
       padding: 14px;
       margin: 1rem 0 2px 0;
     }
   }
-  .attach-file {
-    margin: 1rem 0 0 0;
-    & img {
+  .attach-file{
+    margin: 1rem 0 0 0 ;
+    & img{
       width: 32px;
     }
-    & label {
+    & label{
       cursor: pointer;
     }
-    & label span:nth-child(2) {
+    & label span:nth-child(2){
       font-size: 14px;
       font-weight: 600;
       color: rgba(0, 51, 102, 0.43);
       padding: 0 4px;
     }
   }
-  .send-btn {
-    & p {
-      font-size: 12px;
+  .send-btn{
+   & p{
+     font-size: 12px;
     }
-    & span {
-      height: 40px;
-      width: 80px;
-    }
-  }
+       & span{
+         height:40px;
+         width: 80px;
+       }
+}
 
-  .contact-card {
-    padding: 2rem;
-    & .contact-card-content {
-      color: #036;
-      & .contact-card-heading {
-        text-align: start;
-        padding: 0 0 6rem;
-        & h4 {
-          font-size: 26px;
-          font-weight: 700;
-        }
-        & span {
-          font-size: 14px;
-        }
+.contact-card{
+  padding: 2rem;
+  & .contact-card-content{
+    color: #036;
+    & .contact-card-heading{
+      text-align: start;
+      padding: 0 0 6rem;
+      & h4{
+       font-size: 26px;
+       font-weight: 700;
       }
-      & ul {
-        list-style: none;
-        padding: 5px;
-        margin-bottom: 2rem;
-        text-align: start;
-        & li {
-          padding: 1em 0;
-        }
-        & li img {
-          width: 24px;
-        }
-        & li a {
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-        }
-        & li span {
-          font-size: 14px;
-          font-weight: 600;
-          padding: 0 1rem;
-        }
-        /* & li:nth-child(3){
+      & span{
+        font-size: 14px;
+      }
+    }
+    & ul{
+      list-style: none;
+      padding: 5px;
+      margin-bottom: 2rem;
+      text-align: start;
+      & li{
+        padding: 1em 0;
+      }
+      & li img{
+        width: 24px;
+      }
+      & li a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+      & li span{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 1rem;
+      }
+      /* & li:nth-child(3){
         display: flex;
       } */
-      }
     }
   }
-  .contact-card::after {
-    content: "";
-    background: url(Blue-bubbles.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    /* z-index: 1; */
-    min-width: 80px;
-    min-height: 80px;
-  }
-  .social-media {
-    margin-top: 12rem;
-  }
-  .contact-card::after {
-    min-width: 250px;
-    min-height: 250px;
-  }
 }
+.contact-card::after{
+  content:"";
+  background: url(Blue-bubbles.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* z-index: 1; */
+  min-width: 80PX;
+  min-height: 80px;
+}
+.social-media{
+  margin-top: 12rem;
+}
+.contact-card::after{
+  min-width: 250PX;
+  min-height: 250px;
+}
+ }
 @media (min-width: 1200px) {
   .container-fluid {
     max-width: unset;
