@@ -16,10 +16,9 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary py-0 fixed-top blue-background  lg-solid-backround lg-shadow"
+        class="navbar navbar-expand-lg bg-body-tertiary py-0 fixed-top lg-solid-backround lg-shadow blue-background"
       >
-        <div class="container top py-2 lg-shadow">
-          
+        <div class="container top py-2">
           <a class="navbar-brand" href="#"
             ><img class="main-logo" src="imgs/logo.svg"
           /></a>
@@ -36,6 +35,19 @@
               ><img src="imgs/Vector.svg" alt="img"
             /></span>
           </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><img class="cross-sign" src="imgs/cross-Vector.png" alt="img"
+            /></span>
+          </button>
           <div
             class="collapse navbar-collapse flex-sm-grow-0"
             id="navbarSupportedContent"
@@ -45,7 +57,9 @@
                 <a class="nav-link text-white" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
+                <a class="nav-link text-white" href="portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="Blog.html">Blog</a>
@@ -54,7 +68,9 @@
                 <a class="nav-link text-white" href="about-us.html">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="contact-us.html">Contact us</a>
+                <a class="nav-link text-white" href="contact-us.html"
+                  >Contact us</a
+                >
               </li>
             </ul>
           </div>
@@ -63,7 +79,7 @@
     </header>
     <main>
       <section
-        class="hero-section hero-poster-mobile sm-poster position-relative mt-xxl-3"
+        class="hero-section hero-poster-mobile sm-poster position-relative"
       >
         <div class="container-fluid py-2 px-lg-4 px-xl-6">
           <div class="container">
@@ -90,9 +106,7 @@
         </div>
       </section>
       <section class="what-we-do">
-        <div
-          class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-7"
-        >
+        <div class="container-fluid py-3 px-lg-4 px-xl-6 text-uppercase">
           <div class="container">
             <div class="heading d-flex flex-column align-center my-5 gap-4">
               <h2>What we do</h2>
@@ -151,7 +165,7 @@
       </section>
       <section class="process light-green-background">
         <div
-          class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-2"
+          class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-1"
         >
           <div class="container pb-5">
             <div class="heading d-flex flex-column align-center my-5 gap-4">
@@ -214,41 +228,90 @@
         >
           <div class="container">
             <div class="technology-heading d-flex flex-column">
-              <h2 class="fsw-20 lg-fs-30">OUR TECHNOLOGIES</h2>
-              <div>
-                <input
-                  hidden checked
-                  type="radio"
-                  name="Development"
-                  id="frontend"
-                /><label for="frontend">FRONTEND</label>
-                <input
-                  hidden
-                  type="radio"
-                  name="Development"
-                  id="backend"
-                /><label for="backend">BACKEND</label>
-              </div>
-
-              <div class="t-logos">
-                <span class="icons">
-                  <i><img src="imgs/react 1.png" /></i>
-                  <h4>REACT</h4>
-                </span>
-                <span class="icons">
-                  <i><img src="imgs/angular 1.png" /></i>
-                  <h4>angular</h4>
-                </span>
-                <span class="icons">
-                  <i><img src="imgs/vue 1.png" /></i>
-                  <h4>vue</h4>
-                </span>
+              <h2 class="fsw-20 lg-fs-30 mb-lg-3">OUR TECHNOLOGIES</h2>
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item technology_tabs" role="presentation">
+                  <button
+                    class="nav-link active nav-link-blue"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    FRONTEND
+                  </button>
+                </li>
+                <li class="nav-item technology_tabs" role="presentation">
+                  <button
+                    class="nav-link nav-link-blue1"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    BACKEND
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="t-logos t-logos-frontend">
+                    <span class="icons">
+                      <i><img src="imgs/react 1.png" /></i>
+                      <h4>REACT</h4>
+                    </span>
+                    <span class="icons">
+                      <i><img src="imgs/angular 1.png" /></i>
+                      <h4>angular</h4>
+                    </span>
+                    <span class="icons">
+                      <i><img src="imgs/vue 1.png" /></i>
+                      <h4>vue</h4>
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="t-logos t-logos-backend">
+                    <span class="icons">
+                      <i><img class="backend-imgs" src="imgs/nodejs.png" /></i>
+                      <h4>NODE.JS</h4>
+                    </span>
+                    <span class="icons">
+                      <i><img class="backend-imgs" src="imgs/python.png" /></i>
+                      <h4>PYTHON</h4>
+                    </span>
+                    <span class="icons">
+                      <i
+                        ><img class="dotnet backend-imgs" src="imgs/dotnet.png"
+                      /></i>
+                      <h4>.NET</h4>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="why-section">
+      <section class="why-section"> 
         <div
           class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-2"
         >
@@ -312,7 +375,7 @@
       </section>
       <section class="testimonials light-green-background pb-5">
         <div
-          class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase lg-mt-2"
+          class="container-fluid py-2 px-lg-4 px-xl-6 text-uppercase"
         >
           <div class="container">
             <div class="heading d-flex flex-column align-center my-5 gap-4">
@@ -320,55 +383,67 @@
               <span class="mt-2 text-center">We love our clients</span>
             </div>
 
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
+            <div id="testimonial-control" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active testimonial-item">
                   <img
-                    src="imgs/Testimonial-Card.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="card-content d-flex">
-                    <h3>
-                      Andreas Markle
-                      <span>CEO, ARTONION</span>
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Donec mollis libero sed vulputate ultricies. Phasellus
-                      dignissim eleifend sem, sit amet dictum metus dapibus
-                      quis.
-                      <span class="expand-content"
-                        >Curabitur eu cursus velit, in vehicula libero.
-                        Phasellus quis elit vel felis maximus dapibus.</span
-                      >
-                    </p>
-                  </div>
-                  <!-- <span class="qoute-icon"><i><img src="imgs/qoute-icon.png"></i></span>
-              <i><</i> -->
+                  src="imgs/Testimonial-Card.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="card-content d-flex">
+                  <h3>
+                    Andreas Markle
+                    <span>CEO, ARTONION</span>
+                  </h3>
+                  <p>
+                    CodeSync's fledgling frontend team is a promising addition to the market. Their dedication to quality, rapid responsiveness, and inventive solutions is commendable.
+
+
+                    <span class="expand-content"
+                      >With their passion and expertise, they're poised for success, promising exciting advancements in the industry.</span>
+
+                  </p>
+                </div>
+                </div>
+                <div class="carousel-item testimonial-item">
+                  <img
+                  src="imgs/Testimonial-Card.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="card-content d-flex">
+                  <h3>
+                    Thomas Arlo
+                    <span>CEO, POS</span>
+                  </h3>
+                  <p>
+                    CodeSync's emerging frontend and backend teams make a powerful debut in the market. Their dedication to quality, agility, and inventive solutions is commendable.
+                    <span class="expand-content"
+                      >With passion and expertise, they promise to redefine industry standards, ensuring a seamless and exciting future of innovation.</span
+                    >
+                  </p>
+                </div>
                 </div>
               </div>
               <span class="qoute"><img src="imgs/qoute.svg" alt="" /></span>
-              <!-- <button
-            class="carousel-control-prev"
-            type="button" >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button> -->
               <div class="card-btns">
-                <span><img src="imgs/prev-icon.png" alt="" /></span>
-                <span><img src="imgs/next-icon.png" alt="" /></span>
-              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-control" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button> -->
+              <span  type="button" data-bs-target="#testimonial-control" data-bs-slide="prev" ><img src="imgs/prev-icon.png" alt="" /></span>
+
+              <!-- <button class="carousel-control-next" type="button" data-bs-target="#testimonial-control" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+              <span type="button" data-bs-target="#testimonial-control" data-bs-slide="next"><img src="imgs/next-icon.png" alt="" /></span>
+
             </div>
+
+            </div>
+
           </div>
         </div>
       </section>

@@ -180,10 +180,11 @@ span {
 
 .nav-item {
   padding: 4px 0;
+  text-transform: uppercase;
 }
 
 .btn {
-  padding: 0.9rem 1.5rem;
+  padding: 0.7rem 1rem;
   font-size: 12px;
   border-radius: 8px;
   border: none;
@@ -223,13 +224,13 @@ span {
 .text-pair > p {
   font-size: 10px;
   font-weight: 500;
-  color: #2743d9;
+  color: #185594;
 }
 
 .btn-see-more {
-  box-shadow: 0px 0px 5px 0px #036;
+  box-shadow: 0px 0px 20px 0px rgba(0, 51, 102, 0.25);
   padding: 0.7rem 2rem;
-  border-radius: 5px;
+  border-radius: 8px;
   color: #2743d9;
   text-transform: uppercase;
 }
@@ -247,6 +248,11 @@ span {
   border-radius: 1rem;
   margin: 1.5rem 0;
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+}
+
+.tiles:nth-child(1) {
+  background-color: #185594;
+  color: white;
 }
 
 .tiles:hover {
@@ -273,17 +279,25 @@ span {
   margin: 3rem auto 1rem auto;
 }
 
-.technology-heading div label {
-  font-size: 14px;
-  margin: 0 5px;
-}
-
-.technology-heading label {
+.technology_tabs .nav-link.active,
+.technology_tabs .nav-link {
   position: relative;
-  cursor: pointer;
+  background-color: unset;
+  color: black;
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  padding: 0;
+  margin: 0 7px;
+}
+@media (min-width: 992px) {
+  .technology_tabs .nav-link.active,
+  .technology_tabs .nav-link {
+    font-size: 20px;
+  }
 }
 
-.technology-heading label::before {
+.technology_tabs .nav-link-blue::before {
   content: "";
   position: absolute;
   top: 1.5rem;
@@ -292,40 +306,61 @@ span {
   width: 100%;
   background-color: #185594;
   border-radius: 1rem;
-  transform: scaleX(0);
   transform-origin: bottom right;
+  transform: scaleX(0);
   transition: transform 0.25s linear;
 }
+@media (min-width: 992px) {
+  .technology_tabs .nav-link-blue::before {
+    top: 1.8rem;
+    height: 8px;
+  }
+}
 
-#frontend:checked + label::before {
+.nav-link-blue[aria-selected=true]::before {
   transform-origin: bottom right;
   transform: scaleX(1);
 }
 
-.technology-heading label::after {
+.technology_tabs .nav-link-blue1::after {
   content: "";
   position: absolute;
   top: 1.5rem;
-  right: 0;
+  left: 0;
   height: 10px;
   width: 100%;
   background-color: #185594;
   border-radius: 1rem;
-  transform: scaleX(0);
   transform-origin: bottom left;
+  transform: scaleX(0);
   transition: transform 0.25s linear;
 }
+@media (min-width: 992px) {
+  .technology_tabs .nav-link-blue1::after {
+    top: 1.8rem;
+    height: 8px;
+  }
+}
 
-#backend:checked + label::after {
+.nav-link-blue1[aria-selected=true]::after {
   transform-origin: bottom left;
   transform: scaleX(1);
+}
+
+.technology-heading ul li {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .t-logos {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.tab-content {
+  width: 100%;
 }
 
 .icons {
@@ -343,6 +378,11 @@ span {
   aspect-ratio: 2/1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1400px) {
+  .carousel-item img {
+    height: 91vh;
+  }
 }
 
 .carousel-content {
@@ -366,6 +406,10 @@ span {
   text-transform: capitalize;
 }
 
+.testimonial-item {
+  transition: transform 1s ease-in-out;
+}
+
 .testimonial-item img {
   border-radius: 16px;
   height: 200px;
@@ -386,6 +430,7 @@ span {
 .card-content h3 span {
   font-size: 12px;
   font-weight: 100;
+  display: block;
 }
 .card-content p {
   font-size: 12px;
@@ -416,8 +461,10 @@ span {
   position: absolute;
   bottom: 1rem;
 }
-.card-btns span {
-  cursor: pointer;
+.card-btns span:hover {
+  background-color: #243549 transparent;
+  box-shadow: 0 0 5px black;
+  border-radius: 1rem;
 }
 
 footer {
@@ -473,6 +520,7 @@ nav h1 {
   font-size: 20px;
   font-weight: 400;
   margin-top: 8px;
+  text-transform: uppercase;
 }
 
 .section-style {
@@ -590,7 +638,8 @@ nav h1 {
 .service-tiles p {
   font-size: 10px;
   font-weight: 500;
-  padding: 16px 2px 8px 5px;
+  padding: 16px 2px 16px 5px;
+  margin: 0;
   line-height: 1;
 }
 .service-tiles p span {
@@ -1159,6 +1208,37 @@ nav h1 {
   opacity: 0.7;
 }
 
+.cross-sign {
+  width: 24px;
+}
+
+.backend-imgs {
+  max-width: 79px;
+  height: 80px;
+}
+@media (min-width: 992px) {
+  .backend-imgs {
+    max-width: 100px;
+    height: 100px;
+  }
+}
+
+[aria-expanded=true] {
+  display: none;
+}
+
+[aria-expanded=false] {
+  display: block;
+}
+
+[aria-expanded=false] + [aria-expanded=false] {
+  display: none;
+}
+
+[aria-expanded=true] + [aria-expanded=true] {
+  display: block;
+}
+
 @media (min-width: 576px) {
   .container-fluid {
     max-width: 570px;
@@ -1249,7 +1329,7 @@ nav h1 {
   }
   .service-tiles p {
     font-size: 11px;
-    padding: 16px 2px 8px 8px;
+    padding: 22px 12px;
   }
   .service-tiles p span {
     display: inline;
@@ -1402,6 +1482,9 @@ nav h1 {
   .lg-mt-2 {
     margin-top: 2rem;
   }
+  .lg-mt-1 {
+    margin-top: 1rem;
+  }
   .lg-mb-0 {
     margin-bottom: 0px;
   }
@@ -1411,7 +1494,6 @@ nav h1 {
   .nav-item {
     padding: 0 1rem;
     font-size: 18px;
-    text-transform: capitalize;
   }
   .sm-poster {
     height: 44.6rem;
@@ -1486,16 +1568,6 @@ nav h1 {
     margin-left: 75%;
     margin-bottom: 3rem;
   }
-  .technology-heading div label {
-    font-size: 20px;
-  }
-  .technology-heading label::after,
-  .technology-heading label::before {
-    top: 1.8rem;
-    width: 100px;
-    height: 8px;
-    width: 100%;
-  }
   .icons {
     margin-top: 12px;
   }
@@ -1556,8 +1628,8 @@ nav h1 {
   .services h3,
   .information h3 {
     font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
   }
   .services ul,
   .information ul {
@@ -1583,7 +1655,16 @@ nav h1 {
   .footer-wrapper {
     justify-content: space-between;
     margin: 2rem 0 0 3rem;
+    letter-spacing: 2px;
   }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .footer-wrapper {
+    margin: 0;
+    padding: 6rem 0 2rem 3rem;
+  }
+}
+@media (min-width: 992px) {
   nav h1 {
     font-size: 28px;
   }
@@ -1626,7 +1707,7 @@ nav h1 {
     font-weight: 500;
   }
   .white-bullets span {
-    color: #2743d9;
+    color: #185594;
     font-weight: 500;
   }
   .white-bullets:hover {
@@ -2047,7 +2128,7 @@ nav h1 {
   }
   .card-content h3 {
     font-size: 18px;
-    padding-right: 3rem;
+    padding-right: 4rem;
   }
   .card-content h3 span {
     font-size: 16px;
@@ -2065,9 +2146,14 @@ nav h1 {
     justify-content: space-between;
     padding: 0 2rem;
     top: 5rem;
+    height: 40px;
   }
   .card-btns span {
     width: 40px;
+  }
+  .card-btns span:hover {
+    width: 50px;
+    height: 50px;
   }
   .info {
     font-size: 16px;
@@ -2138,6 +2224,9 @@ nav h1 {
   .servicess-container {
     justify-content: space-between;
     padding-right: 9rem;
+  }
+  .hero-section {
+    margin-top: 4rem;
   }
   .xl-pb-2 {
     padding-bottom: 2rem;
