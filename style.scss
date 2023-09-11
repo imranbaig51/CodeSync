@@ -399,11 +399,11 @@ span {
   gap: 2rem;
   position: absolute;
   bottom: 1rem;
-  span:hover {
-    background-color: #243549 transparent;
-    box-shadow: 0 0 5px black;
-    border-radius: 1rem;
-  }
+  // span:hover {
+  //   background-color: #243549 transparent;
+  //   box-shadow: 0 0 5px black;
+  //   border-radius: 1rem;
+  // }
 }
 footer {
   background-image: url(imgs/Bottom\ full.png);
@@ -2067,6 +2067,9 @@ nav h1 {
     span:hover {
       width: 50px;
       height: 50px;
+      background-color: #243549 transparent;
+      box-shadow: 0 0 5px black;
+      border-radius: 1rem;
     }
   }
   .info {
